@@ -1,0 +1,12 @@
+html {
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+blockquote::before {
+  content: "“";
+}
+
+blockquote::after {
+  content: "”";
+}

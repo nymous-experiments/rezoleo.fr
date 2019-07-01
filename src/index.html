@@ -1,154 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="w-full h-screen" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rézoléo</title>
+    <title>Le Rézoléo</title>
 
     <link
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@1.0.4/dist/tailwind.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header>
-      <span><a href="/">Le Rézoléo</a></span>
-      <nav>
-        <ul>
-          <li><a href="#information">Informations</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#services">Nos services</a></li>
-          <li><a href="#contact">Nous contacter</a></li>
+  <body class="bg-gray-100 pt-16">
+    <header class="fixed top-0 w-full h-16 px-8 py-4 shadow-md bg-gray-100">
+      <nav class="flex items-center">
+        <a class="text-xl lg:text-2xl flex-grow lg:flex-grow-0 font-semibold text-gray-900" href="#">Le Rézoléo</a>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <ul class="hidden lg:flex ml-24 justify-between text-lg text-gray-800">
+          <li
+            class="hover:text-black border-b-4 border-transparent hover:border-gray-800"
+          >
+            <a href="#information">Informations</a>
+          </li>
+          <li
+            class="ml-12 hover:text-black border-b-4 border-transparent hover:border-gray-800"
+          >
+            <a href="#faq">FAQ</a>
+          </li>
+          <li
+            class="ml-12 hover:text-black border-b-4 border-transparent hover:border-gray-800"
+          >
+            <a href="#services">Nos services</a>
+          </li>
+          <li
+            class="ml-12 hover:text-black border-b-4 border-transparent hover:border-gray-800"
+          >
+            <a href="#contact">Nous contacter</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <h1>Le Rézoléo</h1>
+    <main class="container mx-auto">
+      <h1 class="mt-8 text-4xl font-bold text-gray-900 leading-tight">Le Rézoléo</h1>
+      <blockquote class="italic text-2xl text-gray-700">Breaking Internet since 1992</blockquote>
 
-    <p>
-      Le Rézoléo est une association étudiante loi 1901 et fournisseur d'accès à
-      Internet déclaré à l'ARCEP, dont la mission est de connecter la résidence
-      Léonard de Vinci.
-    </p>
-    <p>
-      Nous proposons également des services aux résidents et aux Centraliens,
-      ainsi que des formations.
-    </p>
+      <p class="mt-8 text-gray-800 text-lg leading-relaxed">
+        Le Rézoléo est une association étudiante loi 1901 et fournisseur d'accès
+        à Internet déclaré à l'ARCEP, dont la mission est de connecter la
+        résidence Léonard de Vinci.
+        Nous proposons également des services aux résidents et aux Centraliens,
+        ainsi que des formations.
+        Si le monde informatique t'intéresse, n'hésite pas à
+        <a href="association.html">nous rejoindre</a> !
+      </p>
 
-    <p>
-      Si le monde informatique t'intéresse, n'hésite pas à
-      <a href="association.html">nous rejoindre</a>.
-    </p>
+      <section class="pt-16 -mt-12" id="information">
+        <h2>Informations pratiques</h2>
 
-    <h2 id="information">Informations pratiques</h2>
+        <p>Horaires des permanences : lundi et vendredi, 18h-20h</p>
+        <p>Tarif : 8€ / mois 80€ / an</p>
 
-    <p>Horaires des permanences : lundi et vendredi, 18h-20h</p>
-    <p>Tarif : 8€ / mois 80€ / an</p>
+        <p>Plan de la Rez</p>
 
-    <p>Plan de la Rez</p>
+        <table>
+          <caption>
+            Se relier au réseau de la résidence
+          </caption>
+          <thead>
+            <tr>
+              <th>Mode de Connexion</th>
+              <th>Matériel nécessaire</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Filaire
+              </td>
+              <td>
+                Cable ethernet (photo) + 1 prise murale (disponible dans chaque
+                chambre)
+              </td>
+            </tr>
+            <tr>
+              <td>Wifi avec routeur</td>
+              <td>Cable ethernet + Routeur (photo) ou répéteur</td>
+            </tr>
+            <tr>
+              <td>Wifi Batiment C</td>
+              <td>Rien</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <table>
-      <caption>
-        Se relier au réseau de la résidence
-      </caption>
-      <thead>
-        <tr>
-          <th>Mode de Connexion</th>
-          <th>Matériel nécessaire</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Filaire
-          </td>
-          <td>
-            Cable ethernet (photo) + 1 prise murale (disponible dans chaque
-            chambre)
-          </td>
-        </tr>
-        <tr>
-          <td>Wifi avec routeur</td>
-          <td>Cable ethernet + Routeur (photo) ou répéteur</td>
-        </tr>
-        <tr>
-          <td>Wifi Batiment C</td>
-          <td>Rien</td>
-        </tr>
-      </tbody>
-    </table>
+        Que faire en arrivant ?
+        <ol>
+          <li>
+            Se procurer le matèriel nécessaire (des cables ethernets et des
+            routeurs sont diponibles au local rézoléo)
+          </li>
+          <li>Se présenter au local Rézoléo (carte)</li>
+          <li>Remplir la charte (exemplaire en ligne à titre indicatif)</li>
+          <li>Régler l'abonnement</li>
+          <li>
+            J'amène mes machines au local pour les faire enregistrer (ordi /
+            téléphone / routeur / télé connectée / raspi / alexa / i-watch /
+            panneaux solaires)
+          </li>
+          <li>PROFIT</li>
+        </ol>
+      </section>
 
-    Que faire en arrivant ?
-    <ol>
-      <li>
-        Se procurer le matèriel nécessaire (des cables ethernets et des routeurs
-        sont diponibles au local rézoléo)
-      </li>
-      <li>Se présenter au local Rézoléo (carte)</li>
-      <li>Remplir la charte (exemplaire en ligne à titre indicatif)</li>
-      <li>Régler l'abonnement</li>
-      <li>
-        J'amène mes machines au local pour les faire enregistrer (ordi /
-        téléphone / routeur / télé connectée / raspi / alexa / i-watch /
-        panneaux solaires)
-      </li>
-      <li>PROFIT</li>
-    </ol>
+      <section class="pt-16 -mt-12" id="faq">
+        <h2>FAQ</h2>
 
-    <h2 id="faq">FAQ</h2>
+        <ul>
+          <li>
+            <details>
+              <summary>Internet ne fonctionne pas, que faire ?</summary>
+              Viens au local Rézoléo
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Je veux prolonger mon abonnement</summary>
+              Viens au local Rézoléo avec de l'argent (en forme
+              solide/virtuelle)
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Je change de chambre</summary>
+              Viens au local Rézoléo
+            </details>
+          </li>
+        </ul>
+      </section>
 
-    <ul>
-      <li>
-        <details>
-          <summary>Internet ne fonctionne pas, que faire ?</summary>
-          Viens au local Rézoléo
-        </details>
-      </li>
-      <li>
-        <details>
-          <summary>Je veux prolonger mon abonnement</summary>
-          Viens au local Rézoléo avec de l'argent (en forme solide/virtuelle)
-        </details>
-      </li>
-      <li>
-        <details>
-          <summary>Je change de chambre</summary>
-          Viens au local Rézoléo
-        </details>
-      </li>
-    </ul>
+      <section class="pt-16 -mt-12" id="services">
+        <h2>Nos services</h2>
 
-    <h2 id="services">Nos services</h2>
+        <section>
+          <article>
+            <h3>Hébergement Web</h3>
+            <p>Yolo la police</p>
+          </article>
+          <article>
+            <h3>Télévision par Internet</h3>
+            <p>Yolo la police</p>
+          </article>
+          <article>
+            <h3>Réparation d'ordinateurs</h3>
+            <p>Yolo la police</p>
+          </article>
+          <article>
+            <h3>Mailings-lists</h3>
+            <p>Yolo la police</p>
+          </article>
+          <article>
+            <h3>Le poly</h3>
+            <p>Yolo la police</p>
+          </article>
+        </section>
+      </section>
 
-    <section>
-      <article>
-        <h3>Hébergement Web</h3>
-        <p>Yolo la police</p>
-      </article>
-      <article>
-        <h3>Télévision par Internet</h3>
-        <p>Yolo la police</p>
-      </article>
-      <article>
-        <h3>Réparation d'ordinateurs</h3>
-        <p>Yolo la police</p>
-      </article>
-      <article>
-        <h3>Mailings-lists</h3>
-        <p>Yolo la police</p>
-      </article>
-      <article>
-        <h3>Le poly</h3>
-        <p>Yolo la police</p>
-      </article>
-    </section>
+      <section class="pt-16 -mt-16" id="contact">
+        <h2>Nous contacter</h2>
+        <p>
+          Tu peux nous contacter
+          <a href="mailto:contact@rezoleo.fr">par mail</a>, nous envoyer un
+          message sur
+          <a href="https://www.facebook.com/rezoleoeclille/">Facebook</a>.
+        </p>
+      </section>
 
-    <h2 id="contact">Nous contacter</h2>
-    <p>
-      Tu peux nous contacter <a href="mailto:contact@rezoleo.fr">par mail</a>,
-      nous envoyer un message sur
-      <a href="https://www.facebook.com/rezoleoeclille/">Facebook</a>.
-    </p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel totam sed
+      suscipit delectus doloremque eum eaque veniam adipisci? Id quisquam minus
+      odit necessitatibus quia minima itaque modi eligendi cum eum! Quaerat,
+      adipisci ducimus! Sunt ex voluptatibus dolorum necessitatibus dolore
+      corporis eum, possimus nesciunt, qui recusandae nihil consectetur
+      reprehenderit maxime saepe officiis laudantium repudiandae quo. Nam
+      suscipit officia sequi quia! Temporibus! Suscipit exercitationem, quae
+      veritatis, hic adipisci officia tenetur aliquid consequatur cupiditate
+      cumque asperiores numquam. Id et vitae temporibus, sit sint tempore
+      eligendi nesciunt adipisci voluptates, officiis, iste laboriosam? Numquam,
+      laboriosam. Vero quaerat quis labore veritatis laboriosam, eaque
+      asperiores obcaecati vel voluptatibus pariatur cupiditate in quo iste a,
+      rem aut eveniet ab. Ducimus maiores provident iusto aspernatur eum dolores
+      unde earum! Adipisci modi atque, veritatis deleniti voluptas quidem?
+      Facilis asperiores nesciunt odio sit voluptatibus nulla sunt libero
+      assumenda enim quas fugit iusto eius quaerat quidem dicta pariatur impedit
+      minima, nihil rerum. Corrupti quaerat libero iure ad sequi ipsam nostrum
+      explicabo iste, enim animi corporis maiores illum ut natus. Possimus
+      quaerat dignissimos nihil mollitia, voluptate in provident facilis
+      voluptatem, qui commodi officiis? Corporis sapiente quo possimus iusto
+      officia, enim magnam soluta, dolore maiores amet omnis cupiditate
+      incidunt, repudiandae odit cumque quod facilis error non necessitatibus
+      excepturi. Deserunt pariatur sint saepe eaque numquam! Optio illum
+      repudiandae est itaque temporibus natus voluptate? Voluptate quisquam
+      consequuntur, delectus inventore modi odit similique corrupti ab vitae
+      reiciendis voluptatibus reprehenderit, amet beatae dolorem, sit porro
+      assumenda asperiores culpa? Temporibus ut at unde minima dolore ipsam
+      necessitatibus quisquam, accusantium eos nam nisi saepe dolor commodi
+      tempora cumque labore praesentium. Quisquam doloremque dolor ducimus
+      distinctio officia perspiciatis placeat autem magni. Dolorem, vitae. Sequi
+      similique impedit culpa enim, officiis libero ullam non iste eveniet
+      nostrum incidunt blanditiis deleniti exercitationem numquam et odio porro
+      dignissimos deserunt tempora aliquam, doloremque nam unde. Placeat!
+    </main>
   </body>
 </html>
