@@ -13,12 +13,25 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="bg-gray-100 pt-16">
-    <header class="fixed top-0 w-full h-16 px-8 py-4 shadow-md bg-gray-100">
+    <header
+      class="fixed top-0 w-full h-16 px-8 py-4 shadow-md bg-gray-100 z-10"
+    >
       <nav class="flex items-center">
-        <a class="text-xl lg:text-2xl flex-grow lg:flex-grow-0 font-semibold text-gray-900" href="#">Le Rézoléo</a>
+        <a
+          class="logo text-xl lg:text-2xl flex-grow lg:flex-grow-0 font-semibold text-gray-900"
+          href="#"
+          >Rezoleo</a
+        >
         <div class="block lg:hidden">
           <button class="flex items-center px-3 py-2 border rounded">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
           </button>
         </div>
         <ul class="hidden lg:flex ml-24 justify-between text-lg text-gray-800">
@@ -46,18 +59,26 @@
       </nav>
     </header>
 
-    <main class="container mx-auto">
-      <h1 class="mt-8 text-4xl font-bold text-gray-900 leading-tight">Le Rézoléo</h1>
-      <blockquote class="italic text-2xl text-gray-700">Breaking Internet since 1992</blockquote>
+    <main class="container mx-auto px-6">
+      <h1 class="mt-8 text-4xl font-bold text-gray-900 leading-tight">
+        Le Rézoléo
+      </h1>
+      <blockquote class="italic text-2xl text-gray-700">
+        Breaking Internet since 1992
+      </blockquote>
 
-      <p class="mt-8 text-gray-800 text-lg leading-relaxed">
+      <p class="mt-8 text-gray-800 text-lg leading-relaxed max-w-lg">
         Le Rézoléo est une association étudiante loi 1901 et fournisseur d'accès
         à Internet déclaré à l'ARCEP, dont la mission est de connecter la
-        résidence Léonard de Vinci.
-        Nous proposons également des services aux résidents et aux Centraliens,
-        ainsi que des formations.
-        Si le monde informatique t'intéresse, n'hésite pas à
-        <a href="association.html">nous rejoindre</a> !
+        résidence Léonard de Vinci. Nous proposons également des services aux
+        résidents et aux Centraliens, ainsi que des formations. Si le monde
+        informatique t'intéresse, n'hésite pas à
+        <a
+          class="text-gray-900 font-medium hover:underline"
+          href="association.html"
+          >nous rejoindre</a
+        >
+        !
       </p>
 
       <section class="pt-16 -mt-12" id="information">

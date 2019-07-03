@@ -1,12 +1,21 @@
+@font-face {
+  font-family: 'AngryBlu';
+  src: url(../fonts/ANGRYBLU.TTF);
+}
+
 html {
   padding: 0;
   scroll-behavior: smooth;
 }
 
 blockquote::before {
-  content: "“";
+  content: '“';
 }
 
 blockquote::after {
-  content: "”";
+  content: '”';
+}
+
+.logo {
+  font-family: 'AngryBlu';
 }
