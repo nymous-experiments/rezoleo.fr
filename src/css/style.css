@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'AngryBlu';
-  src: url(../fonts/ANGRYBLU.TTF);
+  src: url(../fonts/Angryblue.ttf);
   font-display: swap;
 }
 
@@ -23,4 +23,16 @@ blockquote::after {
 
 .logo {
   font-family: 'AngryBlu';
+}
+
+.navbar-link {
+  @apply border-b-4 border-transparent;
+
+  &:hover {
+    @apply text-black border-gray-800;
+  }
+}
+
+.section {
+  @apply pt-16 -mt-8;
 }

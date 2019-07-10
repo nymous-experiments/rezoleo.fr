@@ -13,7 +13,7 @@
     >
       <nav class="flex items-center">
         <a
-          class="logo text-xl lg:text-2xl flex-grow lg:flex-grow-0 font-semibold text-gray-900"
+          class="logo text-xl lg:text-2xl flex-grow lg:flex-grow-0 font-semibold tracking-wide text-gray-900"
           href="#"
           >Rezoleo</a
         >
@@ -30,56 +30,64 @@
           </button>
         </div>
         <ul class="hidden lg:flex ml-24 justify-between text-lg text-gray-800">
-          <li
-            class="hover:text-black border-b-4 border-transparent hover:border-gray-800"
-          >
+          <li class="navbar-link">
             <a href="#information">Informations</a>
           </li>
-          <li
-            class="ml-12 hover:text-black border-b-4 border-transparent hover:border-gray-800"
-          >
+          <li class="ml-12 navbar-link">
             <a href="#faq">FAQ</a>
           </li>
-          <li
-            class="ml-12 hover:text-black border-b-4 border-transparent hover:border-gray-800"
-          >
+          <li class="ml-12 navbar-link">
             <a href="#services">Nos services</a>
           </li>
-          <li
-            class="ml-12 hover:text-black border-b-4 border-transparent hover:border-gray-800"
-          >
+          <li class="ml-12 navbar-link">
             <a href="#contact">Nous contacter</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="container mx-auto px-6">
-      <h1 class="mt-8 text-4xl font-bold text-gray-900 leading-tight">
-        Le Rézoléo
-      </h1>
-      <blockquote class="italic text-2xl text-gray-700">
-        Breaking Internet since 1992
-      </blockquote>
+    <main class="container mx-auto px-6 lg:px-24">
+      <div class="flex justify-between" style="max-height: 400px;">
+        <div>
+          <h1 class="mt-8 text-4xl font-bold text-gray-900 leading-tight">
+            Le Rézoléo
+          </h1>
+          <blockquote class="italic text-2xl text-gray-700">
+            Breaking Internet since 1992
+          </blockquote>
 
-      <p class="mt-8 text-gray-800 text-lg leading-relaxed max-w-lg">
-        Le Rézoléo est une association étudiante loi 1901 et fournisseur d'accès
-        à Internet déclaré à l'ARCEP, dont la mission est de connecter la
-        résidence Léonard de Vinci. Nous proposons également des services aux
-        résidents et aux Centraliens, ainsi que des formations. Si le monde
-        informatique t'intéresse, n'hésite pas à
-        <a
-          class="text-gray-900 font-medium hover:underline"
-          href="association.html"
-          >nous rejoindre</a
+          <p class="mt-8 text-gray-800 text-lg leading-relaxed max-w-lg">
+            Le Rézoléo est une association étudiante loi 1901 et fournisseur
+            d'accès à Internet déclaré à l'ARCEP, dont la mission est de
+            connecter la résidence Léonard de Vinci. Nous proposons également
+            des services aux résidents et aux Centraliens, ainsi que des
+            formations.
+            <br />Si le monde informatique t'intéresse, n'hésite pas à
+            <a
+              class="text-gray-900 font-medium hover:underline"
+              href="association.html"
+              >nous rejoindre</a
+            >
+            !
+          </p>
+        </div>
+
+        <img
+          alt="Logo du Rézoléo"
+          class="hidden md:block p-8 h-auto object-contain w-1/2"
+          src="img/logo.png"
+        />
+      </div>
+      <section class="section" id="information">
+        <h2
+          class="pb-2 text-2xl text-gray-900 font-medium uppercase tracking-wide"
         >
-        !
-      </p>
+          Informations pratiques
+        </h2>
 
-      <section class="pt-16 -mt-12" id="information">
-        <h2>Informations pratiques</h2>
-
-        <p>Horaires des permanences : lundi et vendredi, 18h-20h</p>
+        <p>
+          Horaires des permanences : <span>lundi et vendredi, 18h-20h</span>
+        </p>
         <p>Tarif : 8€ / mois 80€ / an</p>
 
         <p>Plan de la Rez</p>
@@ -133,7 +141,7 @@
         </ol>
       </section>
 
-      <section class="pt-16 -mt-12" id="faq">
+      <section class="section" id="faq">
         <h2>FAQ</h2>
 
         <ul>
@@ -159,7 +167,7 @@
         </ul>
       </section>
 
-      <section class="pt-16 -mt-12" id="services">
+      <section class="section" id="services">
         <h2>Nos services</h2>
 
         <section>
@@ -186,7 +194,7 @@
         </section>
       </section>
 
-      <section class="pt-16 -mt-16" id="contact">
+      <section class="section" id="contact">
         <h2>Nous contacter</h2>
         <p>
           Tu peux nous contacter
