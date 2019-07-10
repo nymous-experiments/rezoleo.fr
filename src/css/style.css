@@ -31,6 +31,10 @@ blockquote::after {
   &:hover {
     @apply text-black border-gray-800;
   }
+
+  & > a {
+    @apply block;
+  }
 }
 
 .section {

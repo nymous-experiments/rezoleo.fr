@@ -6,40 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Le Rézoléo</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./main.ts"></script>
   </head>
   <body class="bg-gray-100 pt-16">
     <header
-      class="fixed top-0 w-full h-16 px-8 py-4 shadow-md bg-gray-100 z-10"
+      class="js-header fixed top-0 w-full px-8 py-4 shadow-md bg-gray-100 z-10"
     >
-      <nav class="flex items-center">
+      <nav class="flex flex-wrap items-center">
         <a
-          class="logo text-xl lg:text-2xl flex-grow lg:flex-grow-0 font-semibold tracking-wide text-gray-900"
+          class="logo text-xl lg:text-2xl flex-shrink-0 flex-grow lg:flex-grow-0 font-semibold tracking-wide text-gray-900"
           href="#"
           >Rezoleo</a
         >
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded">
-            <svg
-              class="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <ul class="hidden lg:flex ml-24 justify-between text-lg text-gray-800">
+        <button
+          name="Expand menu"
+          class="js-menuButton lg:hidden flex items-center px-3 py-2 border rounded"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+        <ul
+          class="js-menu hidden w-full lg:w-auto lg:flex lg:ml-24 justify-between text-lg text-gray-800"
+        >
           <li class="navbar-link">
             <a href="#information">Informations</a>
           </li>
-          <li class="ml-12 navbar-link">
+          <li class="lg:ml-12 navbar-link">
             <a href="#faq">FAQ</a>
           </li>
-          <li class="ml-12 navbar-link">
+          <li class="lg:ml-12 navbar-link">
             <a href="#services">Nos services</a>
           </li>
-          <li class="ml-12 navbar-link">
+          <li class="lg:ml-12 navbar-link">
             <a href="#contact">Nous contacter</a>
           </li>
         </ul>
