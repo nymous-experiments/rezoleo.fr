@@ -13,15 +13,15 @@
   "license": "ISC",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.6.1",
     "cross-env": "^5.2.0",
     "parcel-bundler": "^1.12.3",
-    "postcss-preset-env": "^6.6.0",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "tailwindcss": "^1.0.4"
+    "tailwindcss": "^1.1.2"
   }
 }
