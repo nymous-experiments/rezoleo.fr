@@ -17,7 +17,7 @@
     "cross-env": "^5.2.1",
     "parcel-bundler": "^1.12.4",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.3",
     "rimraf": "^3.0.0",
     "typescript": "^3.7.5"
   },
